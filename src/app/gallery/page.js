@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-// import nextImg from "../../assets/nextjs-img.webp";
-import nextImg from "@assets/nextjs-img.webp";
+import nextImg from "../../assets/nextjs-img.webp";
+// import nextImg from "@assets/nextjs-img.webp";
 
 const GalleryPage = () => {
     return (

@@ -1,3 +1,4 @@
+import Navbar from "@/component/shared/Navbar";
 import "./globals.css";
 
 import { Roboto } from 'next/font/google'
@@ -17,7 +18,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={roboto.className} data-theme="light">
-      <body >{children}</body>
+      <body >
+        <Navbar></Navbar>
+        {children}
+        </body>
     </html>
   );
 }
