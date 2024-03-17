@@ -1,0 +1,40 @@
+{
+  "shoes": [
+    {
+      "title": "Men's Running Shoes",
+      "description": "Comfortable and lightweight running shoes for men.",
+      "price": 79.99,
+      "id": "MRS001"
+    },
+    {
+      "title": "Women's High Heels",
+      "description": "Elegant and stylish high heels for women.",
+      "price": 89.99,
+      "id": "WHH002"
+    },
+    {
+      "title": "Kid's Sneakers",
+      "description": "Colorful and durable sneakers for kids.",
+      "price": 49.99,
+      "id": "KSN003"
+    },
+    {
+      "title": "Unisex Flip Flops",
+      "description": "Casual and comfortable flip flops for all genders.",
+      "price": 29.99,
+      "id": "UFL004"
+    },
+    {
+      "title": "Men's Leather Boots",
+      "description": "Stylish and rugged leather boots for men.",
+      "price": 129.99,
+      "id": "MLB005"
+    },
+    {
+      "title": "Women's Ballet Flats",
+      "description": "Simple and versatile ballet flats for women.",
+      "price": 59.99,
+      "id": "WBF006"
+    }
+  ]
+}
