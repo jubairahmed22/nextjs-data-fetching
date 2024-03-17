@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "home page",
   description: "this is home page"
@@ -13,7 +15,7 @@ const HomePage = async () => {
   const shoes = await res.json()
   
   return (
-    <div>
+    <div className="text-center">
       <h1 className="text-2xl font-bold text-center text-black">Nextjs Image optimization</h1>
 
       <div className="grid grid-cols-3 gap-5 place-items-center mt-5">
@@ -34,6 +36,7 @@ const HomePage = async () => {
           )
          }
       </div>
+      <Link href="/all-shoes"><button className="btn btn-primary">See more</button></Link>
     </div>
   );
 };
