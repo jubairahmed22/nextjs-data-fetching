@@ -5,11 +5,11 @@ export const metadata = {
 
 const HomePage = async () => {
    
-  const res = await fetch("http://localhost:5000/shoes");
+  const res = await fetch("http://localhost:5000/shoes",{
+    cache: "force-cache"
+  });
   const shoes = await res.json()
   
-  console.log(shoes);
-
   return (
     <div>
       <h1 className="text-2xl font-bold text-center text-black">Nextjs Image optimization</h1>
@@ -20,10 +20,12 @@ const HomePage = async () => {
           <div key={shoe.id} className="card w-96 bg-base-100 shadow-xl">
           <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
           <div className="card-body">
-            <h2 className="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <h2 className="card-title">{shoe.title}</h2>
+            <p>{shoe.description}</p>
+            <p>{shoe.price}</p>
             <div className="card-actions justify-end">
               <button className="btn btn-primary">Buy Now</button>
+              <button className="btn btn-accent">Details</button>
             </div>
           </div>
         </div>
